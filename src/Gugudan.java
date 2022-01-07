@@ -75,12 +75,37 @@ public class Gugudan {
 //		}
 		
 		//for
-		System.out.println("구구단 중 출력할 단은?");
+//		System.out.println("구구단 중 출력할 단은?");
+//		Scanner s = new Scanner(System.in);
+//		int n = s.nextInt();
+//		for( int i=1; i<10; i++ )
+//		{
+//			System.out.println(n * i);
+//		}
+		
+		//조건문
+		
+		System.out.println("구구단 중 출력할 단은? : ");
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		for( int i=1; i<10; i++ )
+		
+		System.out.println("number : " + n);
+		
+		//조건에 따라 출력
+		if ( n < 2 )
 		{
-			System.out.println(n * i);
+			System.out.println("2단부터 출력 가능합니다.");
+		}
+		else if ( n > 9 )
+		{
+			System.out.println("9단까지만 출력 가능합니다.");
+		}
+		else
+		{
+			for( int i=1; i<10; i++)
+			{
+				System.out.println(n * i);
+			}
 		}
 }	
 }
